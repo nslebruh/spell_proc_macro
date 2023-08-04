@@ -1,0 +1,46 @@
+Declare thy scripture "A tale of enchantments in the ancient realm".
+
+bestow the essence of wizard_name, bearing the sacred words "Merlin".  -- Conjure the essence of a mystical wizard
+grant the essence of age, thusly embodying 100.  -- Manifest the essence of a mystical age
+imbue the essence of is_powerful, bearing the truth.  -- Enchant the essence of a mystical power.
+
+proclaimeth, "Greetings, fellow wizards!".  -- Unveil a sacred incantation
+
+-- Enchanted conditions
+should the essence of age be greater than 100, then
+  proclaimeth, "Thou art an elder wizard, ", concatenated with the essence of wizard_name.
+otherwise, should the essence of age be equal to 100, then
+  proclaimeth, "Thou hast reached the pinnacle of wisdom, ", concatenated with the essence of wizard_name.
+otherwise
+  proclaimeth, "Thou art but a young apprentice, ", concatenated with the essence of wizard_name.
+
+-- Loopeth through the mystical realms
+forsooth, i becometh 1, and i shalt continue through 5, incrementeth by 1, do
+  proclaimeth, "Casting spell number ", concatenated with i.
+
+
+-- Enchanted spells
+conjure the magic of invisibility, which requires nothing, thusly containing,
+  proclaimeth, "I shall vanish from sight!".
+Conclude.
+
+invoke the magic of invisibility.  -- Invoke an enchanted spell
+
+-- Tome (A mystical grimoire)
+the essence of wizard_properties becometh, a collection of enchanted scrolls, thusly containing
+  wand, which shall becometh the sacred words "Elder Oak",
+  spellbook, that shall becometh an ancient tome containing "the wisdom of the ages",
+  familiar, that shall becometh a "wise owl".
+
+proclaimeth, "Wizard's wand: ", concatenated with the essence of the wizard_properties's wand.
+proclaimeth, "Spellbook: ", concatenated with the essence of the wizard_properties's spellbook.
+
+-- Mystical Potions (represented as enchanted vials)
+the essence of potions becometh, a collection of enchanted vials, thusly containing
+  "Potion of Healing",
+  "Elixir of Strength",
+  "Mana Draught".
+
+-- Sip the magical elixirs
+forsooth, i becometh 0 and potion becometh potions's i, do
+  proclaimeth, "Sipping from the enchanted vial: ", concatenated with i, "-", concatenated with potion.
